@@ -1,0 +1,4 @@
+npm init -y
+npm i webpack webpack-cli -D
+npm install firebase
+npm run build
