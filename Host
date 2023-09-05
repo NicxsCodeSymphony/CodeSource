@@ -1,0 +1,7 @@
+npm install firebase-tool
+npm login
+npm firebase init hosting
+use an existing project
+public
+firebase serve
+firebase deploy
