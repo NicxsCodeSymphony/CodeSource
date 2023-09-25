@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            margin: 0;
+        }
+
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+        }
+
+        .panel{
+            height: 100vh;
+            background-color: pink;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div class="panel"></div>
+    <div class="box"></div>
+    <div class="panel"></div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+<script>
+    gsap.registerPlugin(ScrollTrigger);
+
+
+
+    // gsap.to(".box", {x: 500, duration: 2})
+    // gsap.to(".box", {y: 200, duration: 3, delay: 2})
+    // gsap.to(".box", {x: 0, duration: 2, delay: 5})
+
+    // TIMELINE
+
+    // const  tl = gsap.timeline();
+    
+    const tl = gsap.timeline({
+        scrollTrigger: {
+            trigger: ".box",
+            markers: true,
+            start: "top 80%",
+            end: "top 30%",
+            scrub: 1
+        }
+    });
+
+    tl.to(".box", {x: 500, duration: 2})
+      .to(".box", {y: 200, duration: 3})
+      .to(".box", {x: 0, duration: 5})
+
+</script>
+
+
+</body>
+</html>
