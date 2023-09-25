@@ -1,0 +1,28 @@
+body{
+    margin: 0;
+}
+
+.div1, .div2{
+    height: 100vh;
+}
+
+.div1{
+    background-color: pink;
+}
+
+
+.square{
+    width: 150px;
+    height: 20vh;
+    background-color: fuchsia;
+}
+
+.square2{
+    width: 150px;
+    height: 20vh;
+    background-color: green;
+}
+
+.red{
+    background-color: red;
+}
