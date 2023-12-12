@@ -37,4 +37,14 @@ urlpattern = [
   path("", include("myapp.urls"))
 ]
 
+
+# Run the Server
+8. python manage.py runserver
+
+# Adding Templates
+
+9. Create a folder to myapp and name it templates
+10. create a file base.html to templates folder
+11. Generate simple html code and this <title>{% block title %}Django App {% endBlock %}</title> <div class="container">{% block content %} {% endBlock %}</div>
+12. 
   
